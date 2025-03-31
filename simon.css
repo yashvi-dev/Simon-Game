@@ -1,0 +1,100 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Game Container */
+.container {
+  margin-top: 50px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title Styling */
+h2 {
+  margin: 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Button Grid */
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Button Styling */
+.btn {
+  height: 180px;
+  width: 180px;
+  border-radius: 20%;
+  border: 8px solid black;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Colors */
+.green {
+  background-color: #28a745;
+}
+.yellow {
+  background-color: #ffc107;
+}
+.red {
+  background-color: #dc3545;
+}
+.blue {
+  background-color: #007bff;
+}
+
+/* Flash Animations */
+.flash {
+  background-color: white !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.userFlash {
+  background-color: goldenrod !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .box {
+    gap: 10px;
+  }
+
+  .btn {
+    height: 120px;
+    width: 120px;
+    border: 6px solid black;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
